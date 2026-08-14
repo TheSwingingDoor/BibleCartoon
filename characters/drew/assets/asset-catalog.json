@@ -1,0 +1,55 @@
+{
+  "character_id": "drew",
+  "canon_version": "1.0.0",
+  "assets": [
+    {
+      "id": "drew-master-model-v1",
+      "path": "reference/drew-master-model-v1.png",
+      "role": "primary identity, five-view turnaround, head studies, and signature bar pose",
+      "status": "locked",
+      "prompt_id": "human-approved-base"
+    },
+    {
+      "id": "drew-expression-library-v1",
+      "path": "generated/drew-expression-library-v1.png",
+      "role": "approved eyes, beak expressions, smiles, and emotional range",
+      "status": "review",
+      "prompt_id": "drew-expression-library-v1"
+    },
+    {
+      "id": "drew-wing-hand-anatomy-v1",
+      "path": "generated/drew-wing-hand-anatomy-v1.png",
+      "role": "approved wing-arm feather layering, feather-digits, tiny nails, and prop grips",
+      "status": "review",
+      "prompt_id": "drew-wing-hand-anatomy-v1"
+    },
+    {
+      "id": "drew-pose-library-v1",
+      "path": "generated/drew-pose-library-v1.png",
+      "role": "approved full-body acting, seated, standing, walking, leaning, and listening silhouettes",
+      "status": "review",
+      "prompt_id": "drew-pose-library-v1"
+    },
+    {
+      "id": "drew-wardrobe-fit-v1",
+      "path": "generated/drew-wardrobe-fit-v1.png",
+      "role": "scene-variable clothing fit without changing identity or wing anatomy",
+      "status": "review",
+      "prompt_id": "drew-wardrobe-fit-v1"
+    },
+    {
+      "id": "drew-scene-continuity-v1",
+      "path": "generated/drew-scene-continuity-v1.png",
+      "role": "same Drew maintained across bar, golf, fishing, and travel contexts",
+      "status": "review",
+      "prompt_id": "drew-scene-continuity-v1"
+    },
+    {
+      "id": "drew-proportion-style-v1",
+      "path": "generated/drew-proportion-style-v1.png",
+      "role": "proportion landmarks, black-and-white values, line hierarchy, and silhouette checks",
+      "status": "review",
+      "prompt_id": "drew-proportion-style-v1"
+    }
+  ]
+}

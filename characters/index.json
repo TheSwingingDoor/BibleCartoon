@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0.0",
+  "characters": [
+    {
+      "id": "drew",
+      "name": "Drew",
+      "path": "drew/character.json",
+      "canon_version": "1.0.0",
+      "status": "locked"
+    }
+  ]
+}

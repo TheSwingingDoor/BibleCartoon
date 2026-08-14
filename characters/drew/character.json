@@ -1,0 +1,89 @@
+{
+  "$schema": "../../schema/character.schema.json",
+  "schema_version": "1.0.0",
+  "character_id": "drew",
+  "canon_version": "1.0.0",
+  "status": "locked",
+  "identity": {
+    "name": "Drew",
+    "species": "anthropomorphic flamingo",
+    "gender": "male",
+    "age": 46,
+    "series_role": "arch observer and dry analyst",
+    "core_traits": [
+      "curious",
+      "observant",
+      "elegant",
+      "precise",
+      "financially and politically literate",
+      "skeptical but not cynical",
+      "quietly amused"
+    ]
+  },
+  "locked_visual": {
+    "presentation": "G-rated anthropomorphic flamingo completely covered in natural feathers",
+    "build": "average healthy flamingo build; neither lanky-thin nor muscular",
+    "head": "compact mature flamingo head with fine feather texture",
+    "eyes": "small expressive avian eyes with visible sclera, distinct iris and pupil, one restrained catchlight, and controlled eyelid acting",
+    "beak": "recognizable flamingo beak with pale proximal section and dark downturned distal section",
+    "neck": "long, slim, pronounced smooth S-curve; unmistakably flamingo",
+    "arms": "flexible wing-arms built from layered contour and flight feathers",
+    "hands": "three articulated feather-digits: one short thumb-feather and two longer finger-feathers; tiny pale avian nail tips",
+    "legs": "long flamingo legs with webbed bird feet",
+    "permanent_accessory": "solid black bow tie",
+    "base_model": "natural feather covering with bow tie only; clothing is never baked into anatomy",
+    "rendering": "hand-drawn black pen and graphite-like line variation, restrained gray ink wash, warm off-white paper"
+  },
+  "controlled_performance": {
+    "default_expression": "alert neutral with quiet curiosity",
+    "approved_expressions": [
+      "neutral",
+      "curious",
+      "subtle smile",
+      "open smile",
+      "skeptical",
+      "amused",
+      "concerned",
+      "surprised",
+      "thinking",
+      "listening",
+      "speaking"
+    ],
+    "gesture_style": "economical, articulate, readable silhouettes; wing-hands remain feathered",
+    "smile_rule": "smiles are created through the beak seam, cheek feather lift, eyelids, and posture; never human lips or teeth",
+    "signature_prop": "classic martini with exactly three olives on one pick when the scene calls for it"
+  },
+  "scene_variables": {
+    "clothing": "dictated by the scene; fits over the canonical body and never replaces the bow tie",
+    "props": "dictated by the scene; the martini is optional unless specified",
+    "pose": "dictated by action using approved anatomy",
+    "location": "bar, golf course, fishing setting, travel setting, or another explicitly requested environment",
+    "camera": "front, three-quarter, profile, back, seated, close-up, medium, or wide",
+    "expression": "selected from the approved expression system"
+  },
+  "forbidden_drift": [
+    "human head or human nose",
+    "round parrot, duck, pelican, or stork beak",
+    "straight, short, thick, or swan-like neck",
+    "giant alien eyes, all-black bead eyes, or fully human eyes",
+    "human arms, bare human hands, palms, or five fingers",
+    "separate extra wings behind the wing-arms",
+    "long claws, talons, manicured nails, black nail tips, or nail polish",
+    "bodybuilder physique, extreme thinness, pot belly, or juvenile proportions",
+    "missing bow tie or patterned/color bow tie",
+    "permanent suit or clothing added to the base anatomy",
+    "teeth, lips, moustache, hair, or human ears",
+    "color artwork, glossy 3D rendering, vector-flat art, anime, or photorealism",
+    "mean, cruel, frantic, foolish, or cynical default demeanor",
+    "more or fewer than three olives when the signature martini is present"
+  ],
+  "reference_assets": [
+    "drew-master-model-v1",
+    "drew-expression-library-v1",
+    "drew-wing-hand-anatomy-v1",
+    "drew-pose-library-v1",
+    "drew-wardrobe-fit-v1",
+    "drew-scene-continuity-v1",
+    "drew-proportion-style-v1"
+  ]
+}

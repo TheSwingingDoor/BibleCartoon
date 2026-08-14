@@ -1,0 +1,17 @@
+{
+  "character_id": "drew",
+  "canon_version": "1.0.0",
+  "invariant": "IDENTITY LOCK — SAME DREW, NOT A REDESIGN: Drew is the exact 46-year-old male anthropomorphic flamingo shown in the primary master-model reference. Preserve his compact mature flamingo head; expressive but avian eyes with controlled visible white, distinct iris and pupil, and one small catchlight; pale-and-dark strongly downturned flamingo beak; long slim pronounced S-curved neck; average healthy build; long bird legs and webbed flamingo feet; articulated wing-arms made from layered contour and flight feathers; and three small feather-digits per wing-hand, consisting of one thumb-feather and two finger-feathers with tiny pale understated avian nail tips. His solid black bow tie is permanent and always visible. His entire body is covered in natural feathers and presented as a wholesome, G-rated editorial-cartoon character. Keep the same proportions, age, facial construction, feather pattern, and silhouette as the master reference.",
+  "style": "STYLE LOCK: Single-frame mature American editorial cartoon, completely hand-drawn in black pen with graphite-like line variation, fine feather strokes, selective crosshatching, restrained gray ink wash, and warm off-white paper. Clear visual hierarchy, readable silhouettes, dry sophisticated tone. Black and white only. No glossy digital rendering, 3D, anime, photorealism, flat vector art, color, or watermark.",
+  "negative": "FORBIDDEN DRIFT: Do not change Drew into another bird species. No duck bill, parrot hook, pelican pouch, human head, human nose, lips, teeth, hair, human ears, giant alien eyes, all-black bead eyes, oversized whites, fully human eyes, straight or thick neck, human arms, palms, five fingers, bare human hands, extra wings, long claws, talons, manicured nails, black fingertips, muscular body, extreme thinness, child proportions, permanent suit, missing bow tie, patterned bow tie, extra olives, color, or modern glossy cartoon styling.",
+  "scene_variable_fields": [
+    "location",
+    "action_and_pose",
+    "approved_expression",
+    "scene_clothing",
+    "props",
+    "other_characters",
+    "camera_and_crop",
+    "caption_space"
+  ]
+}

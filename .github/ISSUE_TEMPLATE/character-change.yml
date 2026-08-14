@@ -1,0 +1,45 @@
+name: Character canon change
+description: Propose a controlled addition or revision to a character bible
+title: "[Character] "
+labels: ["character-canon"]
+body:
+  - type: input
+    id: character
+    attributes:
+      label: Character
+    validations:
+      required: true
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Canon tier
+      options:
+        - Locked identity
+        - Controlled performance
+        - Scene variable
+        - Documentation only
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and proposed change
+      description: Explain the production problem and the smallest change that solves it.
+    validations:
+      required: true
+  - type: textarea
+    id: affected
+    attributes:
+      label: Affected references and scenes
+      description: List files, prompts, and approved images that must change.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirmation
+      options:
+        - label: I compared the proposal against the current locked master.
+          required: true
+        - label: I will add versioned assets rather than overwrite locked files.
+          required: true

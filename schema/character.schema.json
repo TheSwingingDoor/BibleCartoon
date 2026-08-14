@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/TheSwingingDoor/BibleCartoon/schema/character.schema.json",
+  "title": "The Swinging Door Character Bible",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "character_id",
+    "canon_version",
+    "status",
+    "identity",
+    "locked_visual",
+    "controlled_performance",
+    "scene_variables",
+    "forbidden_drift",
+    "reference_assets"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "character_id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+    "canon_version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "status": { "enum": ["draft", "review", "locked", "retired"] },
+    "identity": { "type": "object" },
+    "locked_visual": { "type": "object" },
+    "controlled_performance": { "type": "object" },
+    "scene_variables": { "type": "object" },
+    "forbidden_drift": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "reference_assets": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+  }
+}

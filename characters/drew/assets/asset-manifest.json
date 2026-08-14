@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "character_id": "drew",
+  "canon_version": "1.0.0",
+  "assets": [
+    {
+      "id": "drew-master-model-v1",
+      "path": "reference/drew-master-model-v1.png",
+      "role": "primary identity, five-view turnaround, head studies, and signature bar pose",
+      "status": "locked",
+      "prompt_id": "human-approved-base",
+      "bytes": 745514,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "05bee27b53eec9ec850235da0337380a5e116713de5733cbdfef2ce2ac0508c4"
+    },
+    {
+      "id": "drew-expression-library-v1",
+      "path": "generated/drew-expression-library-v1.png",
+      "role": "approved eyes, beak expressions, smiles, and emotional range",
+      "status": "review",
+      "prompt_id": "drew-expression-library-v1",
+      "bytes": 648261,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "7162c3e2f0837d0e15e601223d797223735eb5e552f4eb56e4449ea6bc8f3639"
+    },
+    {
+      "id": "drew-wing-hand-anatomy-v1",
+      "path": "generated/drew-wing-hand-anatomy-v1.png",
+      "role": "approved wing-arm feather layering, feather-digits, tiny nails, and prop grips",
+      "status": "review",
+      "prompt_id": "drew-wing-hand-anatomy-v1",
+      "bytes": 832678,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "b8952934deaa86587c020335c6e15270899e64547fdea117a16a49a4aa6e15b9"
+    },
+    {
+      "id": "drew-pose-library-v1",
+      "path": "generated/drew-pose-library-v1.png",
+      "role": "approved full-body acting, seated, standing, walking, leaning, and listening silhouettes",
+      "status": "review",
+      "prompt_id": "drew-pose-library-v1",
+      "bytes": 734816,
+      "width": 1672,
+      "height": 941,
+      "sha256": "ea5b4147ecec64f3c57f4799803580e09e4ea34085039cfe3615a86e87b5c9b9"
+    },
+    {
+      "id": "drew-wardrobe-fit-v1",
+      "path": "generated/drew-wardrobe-fit-v1.png",
+      "role": "scene-variable clothing fit without changing identity or wing anatomy",
+      "status": "review",
+      "prompt_id": "drew-wardrobe-fit-v1",
+      "bytes": 876762,
+      "width": 1774,
+      "height": 887,
+      "sha256": "514e182e82051b07add3a841b0b0ce077b55e8e6cbe0b6f8299f2361a57efbb6"
+    },
+    {
+      "id": "drew-scene-continuity-v1",
+      "path": "generated/drew-scene-continuity-v1.png",
+      "role": "same Drew maintained across bar, golf, fishing, and travel contexts",
+      "status": "review",
+      "prompt_id": "drew-scene-continuity-v1",
+      "bytes": 1080886,
+      "width": 1774,
+      "height": 887,
+      "sha256": "ef5a941f8850c7013af3c10253830b7f05dcd5ff7b3dd7f87e71c1e647d9bdc1"
+    },
+    {
+      "id": "drew-proportion-style-v1",
+      "path": "generated/drew-proportion-style-v1.png",
+      "role": "proportion landmarks, black-and-white values, line hierarchy, and silhouette checks",
+      "status": "review",
+      "prompt_id": "drew-proportion-style-v1",
+      "bytes": 794671,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "3a85ad9b8a2aefe29375925b2a401de6087973d024de4700937383358109371e"
+    }
+  ]
+}
