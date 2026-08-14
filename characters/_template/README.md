@@ -17,5 +17,8 @@ Copy this directory to `characters/<character-id>/` and create:
 - `assets/reference/<id>-master-model-v1.png`
 - `assets/asset-catalog.json`
 - `assets/asset-manifest.json`
+- `prompts.json`
+
+Begin from `character.template.json`, then replace every placeholder and empty collection.
 
 A character remains `draft` until its master reference, machine-readable record, prompt block, forbidden-drift list, and QA checklist agree.

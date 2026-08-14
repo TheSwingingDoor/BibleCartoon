@@ -2,7 +2,12 @@
 
 This repository is the production source of truth for the recurring characters in **The Swinging Door**, a black-and-white, single-frame American editorial-cartoon series.
 
-The first locked character is **Drew**, a 46-year-old anthropomorphic flamingo: observant, curious, arch, and recognizable by his long S-curved neck, expressive avian eyes, feathered wing-arms, and permanent black bow tie.
+The first two locked characters are **Drew**, a 46-year-old anthropomorphic flamingo with an arch analytical voice, and **Abby**, the adult anthropomorphic Westie who owns and tends bar at The Swinging Door with warmth, wit, and quiet authority.
+
+| Character | Production entry point | Locked master |
+|---|---|---|
+| Drew | [`characters/drew/README.md`](characters/drew/README.md) | [`drew-master-model-v1.png`](characters/drew/assets/reference/drew-master-model-v1.png) |
+| Abby | [`characters/abby/README.md`](characters/abby/README.md) | [`abby-master-model-v1.png`](characters/abby/assets/reference/abby-master-model-v1.png) |
 
 ## Why this repository exists
 
@@ -32,13 +37,15 @@ The newest picture is **not** automatically canon. Only files explicitly marked 
 ```text
 characters/
   drew/                 Drew's complete locked bible
+  abby/                 Abby's complete locked bible
   _template/            Repeatable structure for future characters
+docs/                    Cross-character workflow and versioning
 schema/                  Machine-readable character schema
 scripts/                 Dependency-free integrity checks
 .github/                 Change-control and validation workflow
 ```
 
-Start with [`characters/drew/README.md`](characters/drew/README.md).
+Start with [`characters/README.md`](characters/README.md), then open the selected character's README.
 
 ## Production rule in one sentence
 
@@ -55,9 +62,9 @@ python scripts/validate_bible.py
 
 The checks verify required files, character data, asset dimensions, and SHA-256 fingerprints so an accidental image replacement cannot silently become canon.
 
-## Adding the next two characters
+## Adding the next character
 
-Copy `characters/_template`, assign a unique lowercase character ID, supply a locked master model, and complete every required guide before changing the character status from `draft` to `locked`. Do not borrow Drew's anatomy, wardrobe, expressions, or personality unless the new character explicitly shares them.
+Copy `characters/_template`, assign a unique lowercase character ID, supply a locked master model, and complete every required guide before changing the character status from `draft` to `locked`. Follow [`docs/ADDING-A-CHARACTER.md`](docs/ADDING-A-CHARACTER.md). Reuse the production structure, never another character's anatomy, wardrobe, expressions, or personality.
 
 ## Rights
 

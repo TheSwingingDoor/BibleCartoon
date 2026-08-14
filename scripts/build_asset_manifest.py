@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build or verify deterministic SHA-256 manifests for character assets."""
+"""Build or verify deterministic SHA-256 manifests for all indexed characters."""
 
 from __future__ import annotations
 
@@ -11,9 +11,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-ASSETS_DIR = ROOT / "characters" / "drew" / "assets"
-CATALOG_PATH = ASSETS_DIR / "asset-catalog.json"
-MANIFEST_PATH = ASSETS_DIR / "asset-manifest.json"
+INDEX_PATH = ROOT / "characters" / "index.json"
 
 
 def png_dimensions(path: Path) -> tuple[int, int]:
@@ -32,11 +30,20 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-def build_manifest() -> dict:
-    catalog = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
+def load_index() -> list[dict]:
+    data = json.loads(INDEX_PATH.read_text(encoding="utf-8"))
+    return data["characters"]
+
+
+def build_manifest(character_id: str) -> dict:
+    assets_dir = ROOT / "characters" / character_id / "assets"
+    catalog_path = assets_dir / "asset-catalog.json"
+    catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+    if catalog.get("character_id") != character_id:
+        raise ValueError(f"catalog character mismatch: {catalog_path.relative_to(ROOT)}")
     output = {
         "schema_version": "1.0.0",
-        "character_id": catalog["character_id"],
+        "character_id": character_id,
         "canon_version": catalog["canon_version"],
         "assets": [],
     }
@@ -46,7 +53,7 @@ def build_manifest() -> dict:
         if asset_id in seen_ids:
             raise ValueError(f"duplicate asset id: {asset_id}")
         seen_ids.add(asset_id)
-        path = ASSETS_DIR / item["path"]
+        path = assets_dir / item["path"]
         if not path.is_file():
             raise FileNotFoundError(f"missing catalog asset: {path.relative_to(ROOT)}")
         width, height = png_dimensions(path)
@@ -73,23 +80,34 @@ def serialize(data: dict) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true", help="verify instead of writing")
+    parser.add_argument("--character", help="process one indexed character ID")
     args = parser.parse_args()
     try:
-        expected = serialize(build_manifest())
+        indexed = load_index()
+        ids = [item["id"] for item in indexed]
+        if args.character:
+            if args.character not in ids:
+                raise ValueError(f"character is not indexed: {args.character}")
+            ids = [args.character]
+        for character_id in ids:
+            expected = serialize(build_manifest(character_id))
+            manifest_path = ROOT / "characters" / character_id / "assets" / "asset-manifest.json"
+            if args.check:
+                if not manifest_path.exists():
+                    raise FileNotFoundError(
+                        f"asset manifest does not exist: {manifest_path.relative_to(ROOT)}"
+                    )
+                if manifest_path.read_text(encoding="utf-8") != expected:
+                    raise ValueError(
+                        f"asset manifest is stale: {manifest_path.relative_to(ROOT)}"
+                    )
+                print(f"Asset manifest is current for {character_id}.")
+            else:
+                manifest_path.write_text(expected, encoding="utf-8")
+                print(f"Wrote {manifest_path.relative_to(ROOT)}")
     except (OSError, ValueError, KeyError, json.JSONDecodeError) as exc:
         print(f"manifest error: {exc}", file=sys.stderr)
         return 1
-    if args.check:
-        if not MANIFEST_PATH.exists():
-            print("manifest error: asset-manifest.json does not exist", file=sys.stderr)
-            return 1
-        if MANIFEST_PATH.read_text(encoding="utf-8") != expected:
-            print("manifest error: asset-manifest.json is stale", file=sys.stderr)
-            return 1
-        print("Asset manifest is current.")
-        return 0
-    MANIFEST_PATH.write_text(expected, encoding="utf-8")
-    print(f"Wrote {MANIFEST_PATH.relative_to(ROOT)}")
     return 0
 
 

@@ -1,0 +1,91 @@
+{
+  "$schema": "../../schema/character.schema.json",
+  "schema_version": "1.0.0",
+  "character_id": "abby",
+  "canon_version": "1.0.0",
+  "status": "locked",
+  "identity": {
+    "name": "Abby",
+    "species": "anthropomorphic West Highland White Terrier",
+    "gender": "female",
+    "age_class": "adult",
+    "series_role": "owner and bartender of The Swinging Door; recurring supporting character with high narrative authority",
+    "core_traits": [
+      "intelligent",
+      "witty",
+      "warm",
+      "observant",
+      "poised",
+      "competent",
+      "authoritative",
+      "patient"
+    ]
+  },
+  "locked_visual": {
+    "presentation": "attractive adult female Westie; feminine, tasteful, confident, and never childlike",
+    "head": "upright triangular ears, short softly squared canine muzzle, small solid black canine nose, detailed layered white Westie facial fur",
+    "eyes": "medium human-style expressive eyes integrated into the canine face, with visible white sclera, medium-gray radial-textured irises, round black pupils, two small catchlights, clear eyelids, refined lashes, and expressive brow-fur",
+    "build": "adult feminine hourglass silhouette with fuller bust, narrow waist, and slim hips",
+    "hands": "five-digit anthropomorphic hands with slim practical fingers and readable thumbs",
+    "legs": "slim, smooth, hairless, shapely adult legs with a natural thigh gap in neutral front and back views",
+    "tail": "none; no tail, tuft, slit, opening, or rear bulge in any view",
+    "blouse": "light fitted collared blouse with rolled forearm sleeves and only the top button open over a modest scalloped lace inset",
+    "apron_skirt": "very short dark fitted bartender skirt/apron with a large centered functional back bow and uninterrupted no-tail rear silhouette",
+    "neckpiece": "close single strand of small round pearls with one centered oval faceted gemstone in a simple dark metal bezel",
+    "work_accessories": "clean folded bar towel over one shoulder and one delicate bracelet, default right wrist",
+    "shoes": "black closed-toe mid-height heels",
+    "rendering": "confident black pen and graphite-like line variation, detailed directional facial fur, restrained gray ink wash, warm off-white paper, dry mid-century American magazine-cartoon finish"
+  },
+  "controlled_performance": {
+    "default_expression": "welcoming intelligent smile",
+    "approved_expressions": [
+      "welcoming smile",
+      "warm laugh",
+      "attentive listening",
+      "quick-witted smirk",
+      "one raised brow",
+      "skeptical side-eye",
+      "amused restraint",
+      "thoughtful concern",
+      "firm owner authority",
+      "dry deadpan",
+      "surprised but composed",
+      "compassionate reassurance"
+    ],
+    "gesture_style": "economical, poised, readable owner-bartender gestures with correct five-digit hand anatomy",
+    "voice": "short declarative sentences; speaks least and lands hardest",
+    "role_posture": "warm and competent by default; quietly final when setting a boundary"
+  },
+  "scene_variables": {
+    "props": "bar tools, glassware, tray, coaster, towel, and explicitly requested story props",
+    "pose": "selected from approved bartender actions and owner gestures",
+    "location": "normally behind the bar; doors, floor, and back-bar positions require an explicit owner task",
+    "camera": "front, three-quarter, profile, back, close-up, waist-up, full-body, or wide",
+    "expression": "selected from the approved expression system",
+    "dialogue": "optional; follows the voice guide",
+    "towel_shoulder": "may switch only when continuity within a scene is maintained"
+  },
+  "forbidden_drift": [
+    "tail, tail tuft, tail opening, or tail bulge",
+    "furry legs, canine hind paws, stockings, boots, bare feet, pants, or long skirt",
+    "plain choker replacing the pearl collar and centered oval gemstone",
+    "missing lace, towel, bracelet, rear bow, or heels in a normal work view",
+    "dot eyes, bead eyes, all-black eyes, giant eyes, empty irises, mismatched pupils, or crossed gaze",
+    "fully human face, human nose, human ears, exposed human skin, or human hairstyle",
+    "puppy, child, or juvenile proportions",
+    "human lips, human teeth, or loss of the canine muzzle",
+    "exaggerated pin-up anatomy, explicit cleavage, or vacant glamour pose",
+    "ditzy, cruel, submissive, intoxicated, sloppy, or incompetent behavior",
+    "extra limbs, malformed hands, duplicated fingers, or floating props",
+    "color artwork, photorealism, glossy 3D, anime, vector-flat art, or watermark"
+  ],
+  "reference_assets": [
+    "abby-master-model-v1",
+    "abby-expression-library-v1",
+    "abby-eyes-face-construction-v1",
+    "abby-hands-gestures-props-v1",
+    "abby-bartender-actions-v1",
+    "abby-wardrobe-details-v1",
+    "abby-bar-blocking-v1"
+  ]
+}

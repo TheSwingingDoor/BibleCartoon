@@ -1,0 +1,17 @@
+{
+  "character_id": "abby",
+  "canon_version": "1.0.0",
+  "invariant": "IDENTITY LOCK — SAME ABBY, NOT A REDESIGN: Abby is the exact adult female anthropomorphic West Highland White Terrier shown in the primary master-model reference. Preserve her upright triangular ears, detailed layered white Westie facial fur, short canine muzzle, solid black canine nose, expressive medium human-style eyes naturally integrated into the canine face with visible white sclera, medium-gray irises, round black pupils, two small catchlights, clear eyelids, refined lashes, and expressive brow-fur. Preserve her adult feminine hourglass build with fuller bust, narrow waist, slim hips, smooth hairless shapely legs, natural thigh gap, five-digit anthropomorphic hands, and absolutely no tail. Her locked work outfit is a light fitted collared blouse with rolled sleeves and only the top button open over a modest scalloped lace inset; a very short dark fitted bartender skirt/apron with a large centered back bow; a clean folded towel over one shoulder; one delicate bracelet; black closed-toe mid-height heels; and a close single strand of small round pearls with one centered oval faceted gemstone in a simple dark metal bezel. She is Abby, owner and bartender of The Swinging Door: intelligent, witty, warm, poised, competent, smiling, and unmistakably in charge.",
+  "style": "STYLE LOCK: Hand-drawn black pen with graphite-like line variation, fine directional facial-fur strokes, restrained gray ink wash, and warm off-white paper. Dry mid-century American magazine-cartoon finish, readable silhouette, clear visual hierarchy, and generous breathing room. Strictly monochrome. No photorealism, glossy 3D, anime, vector-flat styling, color, or watermark.",
+  "negative": "FORBIDDEN DRIFT: No tail, tail tuft, tail slit, or tail bulge. No furry legs, paw feet, stockings, pants, long skirt, boots, or bare feet. No plain choker; keep the pearl strand and centered oval gemstone. No missing lace, towel, bracelet, back bow, or heels. No dot eyes, bead eyes, all-black eyes, giant eyes, empty irises, mismatched pupils, crossed gaze, fully human face, human nose, human ears, human hairstyle, or exposed human skin. No puppy proportions, exaggerated pin-up anatomy, explicit cleavage, vacant posing, cruelty, incompetence, drunkenness, extra limbs, malformed hands, duplicated fingers, floating props, color, 3D, anime, or watermark.",
+  "scene_variable_fields": [
+    "location",
+    "action_and_pose",
+    "approved_expression",
+    "bar_props",
+    "other_characters",
+    "camera_and_crop",
+    "gaze_target",
+    "dialogue_or_required_text"
+  ]
+}

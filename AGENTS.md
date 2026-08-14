@@ -4,16 +4,16 @@ These instructions apply to every file and image in this repository.
 
 ## Required reading order
 
-Before generating or editing Drew, read:
+Before generating or editing any character with ID `<id>`, read:
 
-1. `characters/drew/character.json`
-2. `characters/drew/CANON.md`
-3. `characters/drew/VISUAL-SPEC.md`
+1. `characters/<id>/character.json`
+2. `characters/<id>/CANON.md`
+3. `characters/<id>/VISUAL-SPEC.md`
 4. the guide relevant to the requested scene
-5. `characters/drew/PROMPT-PACK.md`
-6. `characters/drew/QUALITY-CONTROL.md`
+5. `characters/<id>/PROMPT-PACK.md`
+6. `characters/<id>/QUALITY-CONTROL.md`
 
-Always attach `characters/drew/assets/reference/drew-master-model-v1.png` as the primary identity reference.
+Always attach the character's locked asset under `characters/<id>/assets/reference/` as the primary identity reference. For Abby this is `abby-master-model-v1.png`; for Drew it is `drew-master-model-v1.png`.
 
 ## Non-negotiable rules
 
@@ -35,7 +35,7 @@ If instructions conflict, stop the generation and report the conflict. Do not av
 
 Use one explicit reference role per image:
 
-- **Primary identity reference** — locks Drew's appearance.
+- **Primary identity reference** — locks the selected character's appearance.
 - **Secondary performance reference** — expression, wing-hand anatomy, pose, or wardrobe fit.
 - **Scene reference** — background or prop only; it must not alter Drew.
 

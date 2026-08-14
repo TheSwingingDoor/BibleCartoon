@@ -1,0 +1,55 @@
+{
+  "character_id": "abby",
+  "canon_version": "1.0.0",
+  "assets": [
+    {
+      "id": "abby-master-model-v1",
+      "path": "reference/abby-master-model-v1.png",
+      "role": "primary identity, five-view turnaround, head studies, default bartender presentation",
+      "status": "locked",
+      "prompt_id": "human-approved-base"
+    },
+    {
+      "id": "abby-expression-library-v1",
+      "path": "generated/abby-expression-library-v1.png",
+      "role": "twelve approved expressions with canonical eyes, muzzle, fur, pearl collar, and gemstone",
+      "status": "approved",
+      "prompt_id": "abby-expression-library-v1"
+    },
+    {
+      "id": "abby-eyes-face-construction-v1",
+      "path": "generated/abby-eyes-face-construction-v1.png",
+      "role": "human-style eye construction integrated into the Westie face, gaze, muzzle, and facial fur",
+      "status": "approved",
+      "prompt_id": "abby-eyes-face-construction-v1"
+    },
+    {
+      "id": "abby-hands-gestures-props-v1",
+      "path": "generated/abby-hands-gestures-props-v1.png",
+      "role": "five-digit hand anatomy, owner gestures, bartender grips, and core bar props",
+      "status": "approved",
+      "prompt_id": "abby-hands-gestures-props-v1"
+    },
+    {
+      "id": "abby-bartender-actions-v1",
+      "path": "generated/abby-bartender-actions-v1.png",
+      "role": "full-body bartender actions, owner posture, smooth legs, heels, and no-tail continuity",
+      "status": "approved",
+      "prompt_id": "abby-bartender-actions-v1"
+    },
+    {
+      "id": "abby-wardrobe-details-v1",
+      "path": "generated/abby-wardrobe-details-v1.png",
+      "role": "locked blouse, lace, apron-skirt, rear bow, towel, bracelet, pearl collar, gemstone, and heels",
+      "status": "approved",
+      "prompt_id": "abby-wardrobe-details-v1"
+    },
+    {
+      "id": "abby-bar-blocking-v1",
+      "path": "generated/abby-bar-blocking-v1.png",
+      "role": "Swinging Door positions, counter height, owner tasks, swinging doors, and environment scale",
+      "status": "approved",
+      "prompt_id": "abby-bar-blocking-v1"
+    }
+  ]
+}

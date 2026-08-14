@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schema/character.schema.json",
+  "schema_version": "1.0.0",
+  "character_id": "replace-me",
+  "canon_version": "0.1.0",
+  "status": "draft",
+  "identity": {
+    "name": "Replace Me",
+    "species": "",
+    "gender": "",
+    "age_class": "adult",
+    "series_role": "",
+    "core_traits": []
+  },
+  "locked_visual": {},
+  "controlled_performance": {},
+  "scene_variables": {},
+  "forbidden_drift": [],
+  "reference_assets": []
+}

@@ -7,6 +7,13 @@
       "path": "drew/character.json",
       "canon_version": "1.0.0",
       "status": "locked"
+    },
+    {
+      "id": "abby",
+      "name": "Abby",
+      "path": "abby/character.json",
+      "canon_version": "1.0.0",
+      "status": "locked"
     }
   ]
 }

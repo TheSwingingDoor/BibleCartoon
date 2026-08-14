@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "character_id": "abby",
+  "canon_version": "1.0.0",
+  "assets": [
+    {
+      "id": "abby-master-model-v1",
+      "path": "reference/abby-master-model-v1.png",
+      "role": "primary identity, five-view turnaround, head studies, default bartender presentation",
+      "status": "locked",
+      "prompt_id": "human-approved-base",
+      "bytes": 2222351,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "094e665038bcca65c1b93dac89d75ddb031d4a38210225c4abaa3f7fad0bde35"
+    },
+    {
+      "id": "abby-expression-library-v1",
+      "path": "generated/abby-expression-library-v1.png",
+      "role": "twelve approved expressions with canonical eyes, muzzle, fur, pearl collar, and gemstone",
+      "status": "approved",
+      "prompt_id": "abby-expression-library-v1",
+      "bytes": 2441958,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "f4ecd4ec70cb1c22dfa6480f84cf9193fd327abefee64e7e1c7616e497ff8a26"
+    },
+    {
+      "id": "abby-eyes-face-construction-v1",
+      "path": "generated/abby-eyes-face-construction-v1.png",
+      "role": "human-style eye construction integrated into the Westie face, gaze, muzzle, and facial fur",
+      "status": "approved",
+      "prompt_id": "abby-eyes-face-construction-v1",
+      "bytes": 2591507,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "ad2bf1b51e8144100154ba42415ac6c132bf72b49efd5e36557334936960994d"
+    },
+    {
+      "id": "abby-hands-gestures-props-v1",
+      "path": "generated/abby-hands-gestures-props-v1.png",
+      "role": "five-digit hand anatomy, owner gestures, bartender grips, and core bar props",
+      "status": "approved",
+      "prompt_id": "abby-hands-gestures-props-v1",
+      "bytes": 2437933,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "369f47638c06c5c046d2b21cec849163f032231ae35d3e99c5c8d8094effe6f0"
+    },
+    {
+      "id": "abby-bartender-actions-v1",
+      "path": "generated/abby-bartender-actions-v1.png",
+      "role": "full-body bartender actions, owner posture, smooth legs, heels, and no-tail continuity",
+      "status": "approved",
+      "prompt_id": "abby-bartender-actions-v1",
+      "bytes": 2219791,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "1a66c0961f8442289125205ce4a3de565c0227f067f27a449be105d743db2581"
+    },
+    {
+      "id": "abby-wardrobe-details-v1",
+      "path": "generated/abby-wardrobe-details-v1.png",
+      "role": "locked blouse, lace, apron-skirt, rear bow, towel, bracelet, pearl collar, gemstone, and heels",
+      "status": "approved",
+      "prompt_id": "abby-wardrobe-details-v1",
+      "bytes": 2642317,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "de1dee2e553eb0b77ce2350b1a10fdd854e99bbc0f1048ad5479a10ac8efb82c"
+    },
+    {
+      "id": "abby-bar-blocking-v1",
+      "path": "generated/abby-bar-blocking-v1.png",
+      "role": "Swinging Door positions, counter height, owner tasks, swinging doors, and environment scale",
+      "status": "approved",
+      "prompt_id": "abby-bar-blocking-v1",
+      "bytes": 2778977,
+      "width": 1536,
+      "height": 1024,
+      "sha256": "c0a0d40398e5e32e715379f227f470fd08eb2bb5df74b87f0990eb88d918d585"
+    }
+  ]
+}
